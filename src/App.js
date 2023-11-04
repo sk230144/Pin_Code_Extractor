@@ -1,16 +1,12 @@
 import './App.css';
-import Login from './Login';
-import img from './images/web.avif'
+import CounterInc from './CounterInc';
+import Func from './Practice/Func';
+
 
 function App() {
   return (
-    <div className="section-container">
-      <div className="left-section">
-        
-      </div>
-      <div className="right-section">
-        <Login/>
-      </div>
+    <div className='App'>
+       <Func/>
     </div>
   );
 }
