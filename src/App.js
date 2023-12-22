@@ -1,14 +1,17 @@
 import './App.css';
-import CounterInc from './CounterInc';
-import Func from './Practice/Func';
+import ArrayVisualizer from './Dashboard/Array';
+
+
 
 
 function App() {
   return (
     <div className='App'>
-       <Func/>
+    <h2>Card</h2>
+    <ArrayVisualizer/>
     </div>
   );
 }
 
 export default App;
+
