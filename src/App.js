@@ -1,14 +1,23 @@
+import { useState } from 'react';
 import './App.css';
-import ArrayVisualizer from './Dashboard/Array';
-
+import Header from './assignment/Header';
+import Home from './assignment/Home';
+import Sidebar from './assignment/Sidebar';
 
 
 
 function App() {
+  const [openSidebarToggle, setOpenSidebarToggle] = useState(false)
+
+  const OpenSidebar = () => {
+    setOpenSidebarToggle(!openSidebarToggle)
+  }
+
   return (
-    <div className='App'>
-    <h2>Card</h2>
-    <ArrayVisualizer/>
+    <div className='grid-container'>
+      <Header OpenSidebar={OpenSidebar}/>
+      <Sidebar openSidebarToggle={openSidebarToggle} OpenSidebar={OpenSidebar}/>
+      <Home/>
     </div>
   );
 }
